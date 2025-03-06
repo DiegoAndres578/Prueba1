@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
                  <input type="text" name="nombre" placeholder="Nombre" required>
                  <input type="email" name="email" placeholder="Email" required>
                  <input type="text" name="asunto" placeholder="Asunto" required>
-                 <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
-                 <button type="submit">Enviar</button>
+                 <textarea name="mensaje" placeholder="Mensaje" rows="5" required style="resize: vertical;"></textarea>
+                 <button type="submit" >Enviar</button>
                </form>
                <div id="formResponse"></div>`,
     ubicacion: "<h2>Ubicación</h2><p>Estamos ubicados en la ciudad de ejemplo.</p>"
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .then(response => response.text())
     .then(data => {
-      document.getElementById("formResponse").innerHTML = data;
+      document.getElementById("formResponse").innerHTML = 'Datos enviados con éxito';
       form.reset();
     })
     .catch(error => {
