@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
           const contactForm = document.getElementById("contactForm");
           contactForm.addEventListener("submit", function(e) {
             e.preventDefault();
-            document.getElementById("formResponse").innerHTML = 'Datos enviados con éxito';
+            document.getElementById("formResponse").innerHTML = 'Datos enviados con éxito.';
             enviarFormulario(contactForm);
           });
         }
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .then(response => response.text())
     .then(data => {
-      document.getElementById("formResponse").innerHTML = 'Datos enviados con éxito';
+      document.getElementById("formResponse").innerHTML = 'Datos enviados con éxito.';
       form.reset();
     })
     .catch(error => {
