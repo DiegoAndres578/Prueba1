@@ -1,1 +1,174 @@
-<h1>Hola mundo</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicias Dulces - Repostería Artesanal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #fff8f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ffd7b5;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/29/11/38/bread-1869159_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        .services {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-section {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff9f4d;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ff8c3a;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍰 Delicias Dulces</h1>
+        <p>Repostería artesanal hecha con amor</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Dulces momentos hechos realidad</h2>
+            <p>Postres personalizados para ocasiones especiales</p>
+        </div>
+    </section>
+
+    <section class="services" id="servicios">
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Pasteles de Bodas</h3>
+                <p>Creaciones elegantes para tu día especial</p>
+            </div>
+            <div class="service-card">
+                <h3>Cupcakes Creativos</h3>
+                <p>Pequeñas delicias con diseños únicos</p>
+            </div>
+            <div class="service-card">
+                <h3>Postres Saludables</h3>
+                <p>Opciones bajas en azúcar y sin gluten</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+        <h2>¡Hagamos tu postre ideal!</h2>
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Cuéntanos sobre tu evento y necesidades" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar consulta</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 Delicias Dulces - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
