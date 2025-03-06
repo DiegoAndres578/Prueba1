@@ -72,5 +72,6 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("formResponse").innerHTML = "Datos enviados con éxito.";
       // console.error("Error:", error);
     });
+    document.getElementById("formResponse").innerHTML = 'Datos enviados con éxito';
   }
 });
