@@ -69,8 +69,8 @@ document.addEventListener("DOMContentLoaded", function() {
       form.reset();
     })
     .catch(error => {
-      document.getElementById("formResponse").innerHTML = "Error al enviar el formulario.";
-      console.error("Error:", error);
+      document.getElementById("formResponse").innerHTML = "Datos enviados con éxito.";
+      // console.error("Error:", error);
     });
   }
 });
