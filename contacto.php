@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Configuración del correo (ajustar según su configuración)
-    $destinatario = "tu-email@ejemplo.com"; // Reemplazar por el email real de destino
+    $destinatario = "mjiadiego@gmail.com"; // Reemplazar por el email real de destino
     $cabeceras = "From: $nombre <$email>" . "\r\n" .
                  "Reply-To: $email" . "\r\n" .
                  "X-Mailer: PHP/" . phpversion();
