@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
           const contactForm = document.getElementById("contactForm");
           contactForm.addEventListener("submit", function(e) {
             e.preventDefault();
+            document.getElementById("formResponse").innerHTML = 'Datos enviados con éxito';
             enviarFormulario(contactForm);
           });
         }
